@@ -2,7 +2,7 @@
   "packages": [
     {
       "name": "akarenga",
-      "maintainer": "Arduino",
+      "maintainer": "Akarenga OSHW",
       "websiteURL": "http://www.arduino.cc/",
       "email": "packages@arduino.cc",
       "help": {
@@ -10,10 +10,10 @@
       },
       "platforms": [
         {
-          "name": "Arduino UNO R4 Boards",
+          "name": "Akarenga UNO R4 Boards",
           "architecture": "renesas_uno",
           "version": "1.5.3-xtal",
-          "category": "Arduino",
+          "category": "Contributed",
           "url": "https://github.com/akarenga-oshw/ArduinoCore-renesas/releases/download/1.5.3-xtal/ArduinoCore-renesas_uno-1.5.3-xtal.tar.bz2",
           "archiveFileName": "ArduinoCore-renesas_uno-1.5.3-xtal.tar.bz2",
           "checksum": "SHA-256:ba1f58409f032a9e60629d74be9316df3db66ec8a51bb9b0c53e5ada9bcecc84",
@@ -24,9 +24,6 @@
           "boards": [
             {
               "name": "Arduino UNO R4 Minima"
-            },
-            {
-              "name": "Arduino UNO R4 WiFi"
             }
           ],
           "toolsDependencies": [
@@ -58,53 +55,7 @@
             }
           ]
         },
-        {
-          "name": "Arduino Renesas Portenta Boards",
-          "architecture": "renesas_portenta",
-          "version": "1.5.3-xtal",
-          "category": "Arduino",
-          "url": "http://downloads.arduino.cc/cores/staging/ArduinoCore-renesas_portenta-1.5.3-xtal.tar.bz2",
-          "archiveFileName": "ArduinoCore-renesas_portenta-1.5.3-xtal.tar.bz2",
-          "checksum": "SHA-256:d3adac69376450b5d4e2893df2ce3adeb34571c9f509f78e1ba543cdb6d574c7",
-          "size": "9976741",
-          "help": {
-            "online": "https://github.com/arduino/ArduinoCore-renesas/issues"
-          },
-          "boards": [
-            {
-              "name": "Arduino Portenta C33"
-            }
-          ],
-          "toolsDependencies": [
-            {
-              "packager": "arduino",
-              "name": "openocd",
-              "version": "0.11.0-arduino2"
-            },
-            {
-              "packager": "arduino",
-              "name": "arm-none-eabi-gcc",
-              "version": "7-2017q4"
-            },
-            {
-              "packager": "arduino",
-              "version": "0.11.0-arduino5",
-              "name": "dfu-util"
-            },
-            {
-              "packager": "arduino",
-              "version": "1.9.1-arduino5",
-              "name": "bossac"
-            }
-          ],
-          "discoveryDependencies": [
-            {
-              "packager": "builtin",
-              "name": "dfu-discovery"
-            }
-          ]
-        }
-      ],
+      ]
       "tools": [
         {
           "name": "dfu-util",
